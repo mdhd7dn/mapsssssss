@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mahm/SectionPage.dart';
-import 'Cardss.dart'; // تأكد من استيراد الملف الذي يحتوي على تعريف الكلاس Cardss
+import 'Cardss.dart'; 
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -8,23 +8,15 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
-        title: Center(
-          child: Text(
-            "الأقسام",
-            style: TextStyle(fontSize: 40),
-          ),
-        ),
-      ),
+    
       body: Padding(
         padding: const EdgeInsets.all(8),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, // عدد الأعمدة
-            crossAxisSpacing: 8.0, // المسافة بين الأعمدة
-            mainAxisSpacing: 8.0, // المسافة بين الصفوف
-            childAspectRatio: 4/3, // نسبة العرض إلى الارتفاع لكل عنصر
+            crossAxisCount: 2, 
+            crossAxisSpacing: 8.0, 
+            mainAxisSpacing: 8.0, 
+            childAspectRatio: 4/3,
           ),
           itemCount: sections.length,
           itemBuilder: (context, index) {

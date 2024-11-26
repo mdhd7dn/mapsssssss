@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:mahm/Page1.dart';
+import 'package:mahm/page0.dart';
 
 void main() {
   runApp( MyApp());
@@ -37,7 +38,7 @@ class _HomeWelcomeState extends State<HomeWelcome> {
 
     Timer(Duration(seconds: 1), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => Page1()),
+        MaterialPageRoute(builder: (context) => Page0()),
       );
     });
   }
