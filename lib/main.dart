@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:mahm/Page1.dart';
-import 'package:mahm/page0.dart';
+import 'package:mahm/Pages/Page1.dart';
+import 'package:mahm/Pages/page0.dart';
 
 void main() {
   runApp( MyApp());
@@ -19,6 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomeWelcome(),
     );
   }

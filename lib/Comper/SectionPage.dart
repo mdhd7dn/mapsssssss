@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Cardss.dart'; // تأكد من استيراد الملف الذي يحتوي على تعريف الكلاس Cardss
-
+import 'Cardss.dart'; 
 class SectionPage extends StatelessWidget {
   final Cardss section;
 

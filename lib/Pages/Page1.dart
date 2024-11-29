@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mahm/SectionPage.dart';
-import 'Cardss.dart'; 
+import 'package:mahm/Comper/SectionPage.dart';
+import '../Comper/Cardss.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -8,15 +8,14 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
       body: Padding(
         padding: const EdgeInsets.all(8),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, 
-            crossAxisSpacing: 8.0, 
-            mainAxisSpacing: 8.0, 
-            childAspectRatio: 4/3,
+            crossAxisCount: 2,
+            crossAxisSpacing: 8.0,
+            mainAxisSpacing: 8.0,
+            childAspectRatio: 3/ 3,
           ),
           itemCount: sections.length,
           itemBuilder: (context, index) {
@@ -25,7 +24,8 @@ class Page1 extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => SectionPage(section: sections[index])),
+                      builder: (context) =>
+                          SectionPage(section: sections[index])),
                 );
               },
               child: Card(
@@ -43,7 +43,7 @@ class Page1 extends StatelessWidget {
                       ),
                       child: Image.network(
                         sections[index].imge,
-                        height: 120,
+                        height: 150,
                         width: double.infinity,
                         fit: BoxFit.cover,
                       ),

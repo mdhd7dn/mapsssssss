@@ -1,4 +1,4 @@
-import 'package:mahm/Products.dart';
+import 'package:mahm/Comper/Products.dart';
 
 class Cardss {
   String imge;
@@ -60,6 +60,48 @@ List<Cardss> sections = [
   Cardss(
     imge: 'imaegs/قسم-الصرافةوالحوالات.png',
     name: 'قسم-الصرافةوالحوالات',
+    products: [
+      Product(name: 'منتج 1', image: 'imaegs/product1.png'),
+      Product(name: 'منتج 2', image: 'imaegs/product2.png'),
+    ],
+  ),
+  Cardss(
+    imge: 'imaegs/قسم-الإلكترونيات.jpg',
+    name: 'قسم-الإلكترونيات',
+    products: [
+      Product(name: 'منتج 1', image: 'imaegs/product1.png'),
+      Product(name: 'منتج 2', image: 'imaegs/product2.png'),
+    ],
+  ),
+
+   Cardss(
+    imge: 'imaegs/قسم-ألعاب الأطفال.jpg',
+    name: 'قسم-العاب-الاطفال',
+    products: [
+      Product(name: 'منتج 1', image: 'imaegs/product1.png'),
+      Product(name: 'منتج 2', image: 'imaegs/product2.png'),
+    ],
+  ),
+   Cardss(
+    imge: 'imaegs/قسم-الأجهزة الرياضية.jpg',
+    name: 'قسم-الاجهزة-الرياضية',
+    products: [
+      Product(name: 'منتج 1', image: 'imaegs/product1.png'),
+      Product(name: 'منتج 2', image: 'imaegs/product2.png'),
+    ],
+  ),
+   Cardss(
+    imge: 'imaegs/قسم-الكتب والقرطاسية.png',
+    name: 'قسم-الكتب والقرطاسية',
+    products: [
+      Product(name: 'منتج 1', image: 'imaegs/product1.png'),
+      Product(name: 'منتج 2', image: 'imaegs/product2.png'),
+    ],
+  ),
+
+   Cardss(
+    imge: 'imaegs/قسم-الطوارئ.jpg',
+    name: 'قسم-الطوارئ',
     products: [
       Product(name: 'منتج 1', image: 'imaegs/product1.png'),
       Product(name: 'منتج 2', image: 'imaegs/product2.png'),
